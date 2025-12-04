@@ -94,7 +94,24 @@
         console.log(newline2); // \n is used for new line in double quotes
         // Multiline strings with backtick, Both will print the same multiline string
 
+       // const badQuotes = "She said "I think so!"";  "This will cause an error due to nested double quotes"
+        const goodQuotes1 = 'She said "I think so!"'; 
+        const goodQuotes2 = `She said "I'm not going in there!"`; 
+        console.log(goodQuotes1);
+        console.log(goodQuotes2);
+
+        const bigmouth = 'I\'ve got no right to take my place…'; // using \ to escape single quote
+        console.log(bigmouth); // "I've got no right to take my place…"
+        // Handling quotes within strings
         
+        const myString = "123";
+        const mynum = Number(myString);
+        console.log(mynum); // 123
+
+        const myNum2 = 123;
+        const myString2 = String(myNum2);
+        console.log(typeof myString2); // "string"
+        // Type conversion between strings and numbers
 
 
         </script>

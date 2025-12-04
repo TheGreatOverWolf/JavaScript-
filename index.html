@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
         console.log("Hello, World!2");
+        // This is a comment in console log
 
         let firsname = "Alice";
         let lastname = "Smith";
+
         console.log(firsname)
         console.log(lastname)
+        // Variable declaration and logging
+        console.log(firsname + " " + lastname);
+        // console.log(firsname + 2 + 3); // This will print "Alice23"
 
         let age = 30;
         console.log(age);
         age = 31;
         console.log(age);
+        // let reassignment is allowed with let not with const
         
         const pi = 3.14159;
-       // pi = 10; // This will cause an error
+        // pi = 10; // This will cause an error
         console.log(pi); 
-        
+        // const reassignment is not allowed
+
         console.log(23 + 97 + 54 + 12 + 7 + 32);
         console.log((4 + 6 + 9) / 77);
+        // Basic arithmetic operations
        
         let a = 10;
         console.log(a);
@@ -33,11 +42,54 @@
         console.log(a);
         let b = 7 * a;
         console.log(b);
+        // Variable manipulation
 
         const max = 57;
         const actual = max - 13;
         const percentage = actual / max;
         console.log(percentage);
+        // More arithmetic with constants
+
+        const string = "The revolution will not be televised.";
+        console.log(string);
+        const badString = string;
+        console.log(badString);
+        // copying string values 
+
+        //  const badString1 = This is a test;     This will cause an error   end' begin' (''=""=``)
+        //  const badString2 = 'This is a test;    This will cause an error   end '
+        //  const badString3 = This is a test';    This will cause an error   begin'
+        // const badQuotes = 'This is not allowed!";  This will cause an error due to mismatched quotes
+        const single = 'Single quotes';
+        const double = "Double quotes";
+        const backtick = `Backtick`;    
+        console.log(single);
+        console.log(double);
+        console.log(backtick); 
+        // Different ways to declare strings 
+
+        const name = "Chris";
+        const greeting = `Hello, my name is ${name}!`; 
+        console.log(greeting);
+        // Template literals and string interpolation 
+
+        const one = "Hello, ";
+        const two = "how are you?";   
+        const joined = `${one}${two}`;
+        console.log(joined); // "Hello, how are you?"
+        // String concatenation using template literals
+
+        const song = "Fight the Youth";
+        const score = 9;
+        const highestScore = 10;
+        const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100}%.`;
+        console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+        // Combining variables and expressions in template literals
+
+        
+        
+
+
         </script>
     
 </body>

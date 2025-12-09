@@ -8,10 +8,14 @@
 
 <body>
 
+    <input type="text" placeholder="Start typing here..." id="myBox">
+
     <script>
+
+    /* 
         console.log("Hello, World!2");
         // This is a comment in console log
-
+        
         let firsname = "Alice";
         let lastname = "Smith";
 
@@ -121,9 +125,70 @@
         let result = 5 > 4; // assign the result of the comparison
         alert(result); // true
         // Storing comparison results in variables
+    */
 
-        </script>
+    function favoriteAnimal (animal){
+    return animal + " is my favorite animal!"
+
+    }
+    const message = favoriteAnimal ("Goat");
+    console.log(message);
+    //
+
+    const myText = "i am a string";
+    const newString = myText.replace("string", "sausage")
+    console.log(newString)
+    //
+
+    const myArray = ["I", "love", "chocolate", "frogs"];
+    const madeASring = myArray.join(" ");
+    console.log(madeASring);
+    //
     
+    const myNumber = Math.random();
+    console.log(myNumber);
+    //
 
+    function random(number) {
+    return Math.floor(Math.random() * number) + 1;  
+    }
+    random(6)
+   //
+
+    function hello(name = "chris"){
+        console.log(`Hello ${name}!`);
+    }
+    
+    hello("Ari");
+    hello();
+    //
+
+    const textBox = document.querySelector("input");
+
+    function logKey(event){
+        console.log(`You pressed "${event.key}".`);
+    }
+    
+    textBox.addEventListener("keydown", logKey)
+    //
+
+    textBox.addEventListener("keydown", (event) => {
+    console.log(`You pressed "${event.key}".`);
+    });
+    //
+
+    const originals = [1, 2, 3,];
+    const doubled = originals.map(item => item * 2);
+    console.log(doubled)
+
+    /*const doubled = originals.map(function (item) {
+        return item * 2;
+    }); /*
+    //
+
+
+    </script>
+    
 </body>
+
 </html>
